@@ -17,4 +17,4 @@ app.listen(port, () => {
 });
 app.use(express.urlencoded({ extended: false }));
 
-app.use("/api/question", questionRouter);
+app.use("/api", questionRouter);
