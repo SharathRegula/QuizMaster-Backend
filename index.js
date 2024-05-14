@@ -1,5 +1,6 @@
 const express = require("express");
 require("dotenv").config();
+var cors = require("cors");
 const connectDB = require("./db/connectDB");
 
 const questionRouter = require("./routes/question");
@@ -17,4 +18,4 @@ app.listen(port, () => {
 });
 app.use(express.urlencoded({ extended: false }));
 
-app.use("/api/question", questionRouter);
+app.use("/api", questionRouter);
