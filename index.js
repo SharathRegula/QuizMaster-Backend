@@ -5,7 +5,7 @@ const connectDB = require("./db/connectDB");
 const questionRouter = require("./routes/question");
 
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8001;
 connectDB;
 
 app.get("/", (req, res) => {
