@@ -8,8 +8,7 @@ const questionRouter = require("./routes/question");
 const app = express();
 app.use(
   cors({
-    origin:
-      "https://b770e8ce-3526-4311-8c37-5f211060b1d9-00-n0wudzuc5dh0.spock.replit.dev/",
+    origin: "*",
   }),
 );
 const port = process.env.PORT || 8001;
